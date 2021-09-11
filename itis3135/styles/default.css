@@ -2,6 +2,7 @@ body {
   background-color: #829CD0;
   text-align: center;
   font-family: sans-serif;
+  list-style-position: inside;
 }
 
 ul {
@@ -13,6 +14,26 @@ figcaption {
   font-size: 15px;
   margin-bottom: 20px;
 }
+
+table{
+  border-collapse: collapse;
+  margin: auto;
+}
+
+thead{
+  background-color: Red;
+}
+
+th,td{
+  border: 1px solid black;
+  padding: .2em 1em .2em .5em;
+  text-align: left;
+  vertical-align: middle;
+}
+
+tbody tr:nth-child(odd) td{background-color: #AA4A44;}
+tbody tr:nth-child(even) td{background-color: #E97451;}
+
 
 .myPic {
   height: 400px;
