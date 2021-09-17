@@ -1,14 +1,8 @@
 body {
-  background-color: #829CD0;
-  text-align: center;
   font-family: sans-serif;
-  list-style-position: inside;
+  background-color: #EB7C7C;
 }
 
-ul {
-  text-align: left;
-  ;
-}
 
 figcaption {
   font-size: 15px;
@@ -17,12 +11,9 @@ figcaption {
 
 table{
   border-collapse: collapse;
-  margin: auto;
 }
 
-thead{
-  background-color: Red;
-}
+
 
 th,td{
   border: 1px solid black;
@@ -31,8 +22,8 @@ th,td{
   vertical-align: middle;
 }
 
-tbody tr:nth-child(odd) td{background-color: #AA4A44;}
-tbody tr:nth-child(even) td{background-color: #E97451;}
+tbody tr:nth-child(odd) td{background-color: #EB7C7C;}
+tbody tr:nth-child(even) td{background-color: #DE3535;}
 
 
 .myPic {
@@ -46,5 +37,34 @@ tbody tr:nth-child(even) td{background-color: #E97451;}
 }
 
 .myLinks:hover {
-  color: White;
+  color: #DE3535;
+}
+
+
+header{
+  background-color: #DE3535;
+}
+
+form{
+  background-color: #829CD0;
+  border-radius: 200px;
+  text-align: center;
+}
+
+.myButton{
+  background-color: #DE3535;
+  color: #829CD0;
+}
+
+input:required{
+  color: Red;
+}
+
+.webevals{
+  background-color: white;
+}
+
+
+.valid{
+  text-align: center;
 }
