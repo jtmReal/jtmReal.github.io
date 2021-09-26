@@ -70,3 +70,17 @@ input:required{
 .valid{
   text-align: center;
 }
+
+.interactions{
+  text-align: center;
+  background-color: #FFC49B;
+  font-family: Comic Sans MS;
+}
+
+.interactions_h1{
+  background-color: white;
+}
+
+#intro{
+  color: red;
+}
