@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="styles/default.css">
-  <script src="scripts/calculator_v2.js"defer></script>
-  <title>Jonathan Miller, ITSC 3135, Calculator With Tutorial</title>
+  <script src="scripts/arrays.js"defer></script>
+  <title>Jonathan Miller, Arrays</title>
 </head>
 
 <body class="interactions">
@@ -25,33 +25,31 @@
     <a class="myLinks" href="https://webpages.uncc.edu/jmill315/itis3135/polygon.html">Polygons</a>
   </nav>
 
-  <h2 class ="h1-text">Calculator</h2>
-  <h1>I did not follow the freecodecamp tutorial but instead found a tutorial I found a lot easier to understand on youtube..</h1>
+  <h2>Arrays</h2>
 
-  <div class="calculator-grid">
-    <div class="output">
-      <div data-previous class="previous-operand"></div>
-      <div data-current class="current-operand"></div>
-    </div>
-    <button data-clear class="span-two">AC</button>
-    <button data-delete>DEL</button>
-    <button data-operation>/</button>
-    <button data-number>1</button>
-    <button data-number>2</button>
-    <button data-number>3</button>
-    <button data-operation>*</button>
-    <button data-number>4</button>
-    <button data-number>5</button>
-    <button data-number>6</button>
-    <button data-operation>+</button>
-    <button data-number>7</button>
-    <button data-number>8</button>
-    <button data-number>9</button>
-    <button data-operation>-</button>
-    <button data-number>.</button>
-    <button data-number>0</button>
-    <button data-equals class="span-two">=</button>
-  </div>
+  <label>Select Name:</label>
+  <select id="employee">
+    <option value="Jamie Timmings">Jamie Timmings</option>
+    <option value="Mali Small">Mali Small</option>
+    <option value="TJ White">TJ White</option>
+    <option value="Saly Mittins">Saly Mittins</option>
+    <option value="Ashley Tiny">Ashley Tiny</option>
+    <option value="Jeff Ford">Jeff Ford</option>
+  </select>
+  <br>
+  <label>Salary:</label>
+  <input id="salary" type="text" name="salary" value="">
+  <br>
+  <button id="addSalary" type="button">Add Salary to Person Selected</button>
+  <br>
+
+  <button id = "displayResults"  class = "end" type="button" name="display">Display Results</button>
+  <button id = "displaySalary" class = "end" type="button" name="Salaries">Display Salaries</button>
+
+  <p id=displayResultsText></p>
+  <p id=displaySalaryText></p>
+
+
 
   <footer>
     <br />

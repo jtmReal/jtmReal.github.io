@@ -84,47 +84,61 @@ input:required{
 }
 
 
-.container{
-  max-width: 400px;
-  margin:10vh auto 0 auto;
-  background-color: white;
-  border-radius: 10px;
-}
 
-#display{
-  text-align: right;
-  height: 70px;
-  line-height: 70px;
-  padding: 16px 8px;
-  font-size: 25px;
-}
 
-.buttons{
+.calculator-grid {
   display: grid;
-  border-bottom: 1px solid #999;
-  border-left: 1px solid #999;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 90px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 80px);
+
 }
 
-.buttons > div{
-  border-top: 1px solid #999;
-  border-right:  1px solid #999;
-}
-
-.button{
-  border: 0.5px solid #999;
-  line-height: 100px;
-  text-align: center;
-  font-size: 25px;
+.calculator-grid > button {
   cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid white;
+  outline: none;
+  background-color:rgba(93, 93, 93, .75);
 }
 
-#equal{
-  background-color: Blue;
+.calculator-grid > button:hover {
+  background-color: Black;
   color: White;
 }
 
-.button:hover{
-  background-color: black;
+.span-two {
+  grid-column: span 2;
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color: rgba(130, 156, 208, .75);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.output .previous {
+  color: rgba(255, 255, 255, .75);
+  font-size: 1.5rem;
+}
+
+.output .current {
   color: white;
+  font-size: 2.5rem;
+}
+
+.h1-text{
+  font-size: 50px;
+}
+
+.end{
+  background-color: red;
 }
